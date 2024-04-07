@@ -1,12 +1,15 @@
 
+header-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
 h1 {
-  color: rgb(129, 194, 222);
+  color: rgb(142, 213, 244);
   font-family: 'Arial Black';
-  font-size: 2.5em;
 }
 
 h2 {
-  color: rgb(74, 131, 155);
-  /* color: rgb(42, 42, 118); */
-  /* font-family: 'Arial Black'; */
+  color: rgb(166, 166, 166);
 }

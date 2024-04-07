@@ -1,0 +1,59 @@
+
+
+/* The map container - */
+.mapDiv {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  border: 5px;
+  margin: 4px;
+  padding: 4px;
+}
+
+/* Handling screen size */
+@media only screen and (max-width: 600px) {
+  #viewDiv {
+    width: 100%;
+  }
+}
+
+
+/* Pop-up window - */
+.esri-popup__main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 15em !important;
+  height: 10em !important;  
+  /* border-radius: 15% !important;
+  position: relative !important; */
+}  
+
+
+/* Close window button in popup window - */
+.esri-popup__button {
+  cursor: pointer;
+}
+
+
+/* Information table of the pop-up window -  */
+.esri-feature__content-element {
+  width: 14em !important;
+}
+
+
+
+/* Hiding irrelevant information from the pop-up window: */
+
+.esri-popup__feature-menu {
+  display: none;
+}
+
+.esri-popup__footer {
+  display: none;
+}
+
+.esri-popup__button.esri-popup__button--dock {
+  display: none;
+}
