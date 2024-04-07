@@ -6,9 +6,6 @@ import { CapitalCitiesUrl } from '../../Infrastructure/urls';
 
 const Map = () => {
 
-  // URL for the Capital Cities feature layer
-  const featureLayerUrl = CapitalCitiesUrl
-
   // useEffect hook to load the map and its components
   useEffect(() => {
 
@@ -66,7 +63,7 @@ const Map = () => {
 
         // Create a new featureLayer object for the Capital Cities feature layer - 
         const featureLayer = new FeatureLayer({
-          url: featureLayerUrl,
+          url: CapitalCitiesUrl, // URL for the Capital Cities feature layer
           outFields: ['CITY_NAME', 'POP_RANK'],
           popupTemplate: popupTemplate // popupTemplate object
         });
